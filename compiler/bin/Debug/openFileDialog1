@@ -1,0 +1,4 @@
+program a;
+var
+    a,b,c:int;
+    _a:char;

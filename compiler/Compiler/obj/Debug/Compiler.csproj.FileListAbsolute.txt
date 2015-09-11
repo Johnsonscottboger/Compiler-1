@@ -1,0 +1,56 @@
+D:\Compiler\Compiler\Compiler\obj\Debug\ResolveAssemblyReference.cache
+D:\Compiler\Compiler\Compiler\obj\Debug\Compiler.Complier.resources
+D:\Compiler\Compiler\Compiler\obj\Debug\Compiler.Properties.Resources.resources
+D:\Compiler\Compiler\Compiler\obj\Debug\Compiler.RegToNfa.resources
+D:\Compiler\Compiler\Compiler\obj\Debug\GenerateResource.read.1.tlog
+D:\Compiler\Compiler\Compiler\obj\Debug\GenerateResource.write.1.tlog
+D:\Compiler\Compiler\Compiler\obj\Debug\Compiler.exe
+D:\Compiler\Compiler\Compiler\obj\Debug\Compiler.pdb
+D:\Compiler\Compiler\Compiler\bin\Debug\Compiler.exe
+D:\Compiler\Compiler\Compiler\bin\Debug\Compiler.pdb
+D:\Compiler\Compiler\Compiler\bin\Debug\Compiler.exe.manifest
+D:\Compiler\Compiler\Compiler\bin\Debug\Compiler.application
+D:\Compiler\Compiler\Compiler\obj\Debug\Compiler.TrustInfo.xml
+D:\Compiler\Compiler\Compiler\obj\Debug\Compiler.exe.manifest
+D:\Compiler\Compiler\Compiler\obj\Debug\Compiler.application
+D:\Compiler\Compiler\Compiler\bin\Debug\GrammarAnalysis.dll
+D:\Compiler\Compiler\Compiler\bin\Debug\GrammarAnalysis.pdb
+D:\Compiler\Compiler\Compiler\obj\Debug\Compiler.DFAmin.resources
+G:\Compiler\Compiler\Compiler\obj\Debug\Compiler.exe
+G:\Compiler\Compiler\Compiler\obj\Debug\Compiler.pdb
+G:\Compiler\Compiler\Compiler\bin\Debug\Compiler.exe.manifest
+G:\Compiler\Compiler\Compiler\bin\Debug\Compiler.application
+G:\Compiler\Compiler\Compiler\bin\Debug\Compiler.exe
+G:\Compiler\Compiler\Compiler\bin\Debug\Compiler.pdb
+G:\Compiler\Compiler\Compiler\bin\Debug\GrammarAnalysis.dll
+G:\Compiler\Compiler\Compiler\bin\Debug\GrammarAnalysis.pdb
+G:\Compiler\Compiler\Compiler\obj\Debug\ResolveAssemblyReference.cache
+G:\Compiler\Compiler\Compiler\obj\Debug\Compiler.Complier.resources
+G:\Compiler\Compiler\Compiler\obj\Debug\Compiler.DFAmin.resources
+G:\Compiler\Compiler\Compiler\obj\Debug\Compiler.Properties.Resources.resources
+G:\Compiler\Compiler\Compiler\obj\Debug\Compiler.RegToNfa.resources
+G:\Compiler\Compiler\Compiler\obj\Debug\GenerateResource.read.1.tlog
+G:\Compiler\Compiler\Compiler\obj\Debug\GenerateResource.write.1.tlog
+G:\Compiler\Compiler\Compiler\obj\Debug\Compiler.TrustInfo.xml
+G:\Compiler\Compiler\Compiler\obj\Debug\Compiler.exe.manifest
+G:\Compiler\Compiler\Compiler\obj\Debug\Compiler.application
+C:\Documents and Settings\Administrator\桌面\Compiler\Compiler\Compiler\obj\Debug\Compiler.exe
+C:\Documents and Settings\Administrator\桌面\Compiler\Compiler\Compiler\obj\Debug\Compiler.pdb
+C:\Documents and Settings\Administrator\桌面\Compiler\Compiler\Compiler\bin\Debug\Compiler.exe.manifest
+C:\Documents and Settings\Administrator\桌面\Compiler\Compiler\Compiler\bin\Debug\Compiler.application
+C:\Documents and Settings\Administrator\桌面\Compiler\Compiler\Compiler\bin\Debug\Compiler.exe
+C:\Documents and Settings\Administrator\桌面\Compiler\Compiler\Compiler\bin\Debug\Compiler.pdb
+C:\Documents and Settings\Administrator\桌面\Compiler\Compiler\Compiler\bin\Debug\GrammarAnalysis.dll
+C:\Documents and Settings\Administrator\桌面\Compiler\Compiler\Compiler\bin\Debug\GrammarAnalysis.pdb
+C:\Documents and Settings\Administrator\桌面\Compiler\Compiler\Compiler\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\Compiler\Compiler\Compiler\obj\Debug\Compiler.Complier.resources
+C:\Documents and Settings\Administrator\桌面\Compiler\Compiler\Compiler\obj\Debug\Compiler.DFAmin.resources
+C:\Documents and Settings\Administrator\桌面\Compiler\Compiler\Compiler\obj\Debug\Compiler.Properties.Resources.resources
+C:\Documents and Settings\Administrator\桌面\Compiler\Compiler\Compiler\obj\Debug\Compiler.RegToNfa.resources
+C:\Documents and Settings\Administrator\桌面\Compiler\Compiler\Compiler\obj\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Administrator\桌面\Compiler\Compiler\Compiler\obj\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\Administrator\桌面\Compiler\Compiler\Compiler\obj\Debug\Compiler.TrustInfo.xml
+C:\Documents and Settings\Administrator\桌面\Compiler\Compiler\Compiler\obj\Debug\Compiler.exe.manifest
+C:\Documents and Settings\Administrator\桌面\Compiler\Compiler\Compiler\obj\Debug\Compiler.application
+E:\Program Files\GitHub\Compiler\compiler\Compiler\obj\Debug\Compiler.exe
+E:\Program Files\GitHub\Compiler\compiler\Compiler\obj\Debug\Compiler.pdb

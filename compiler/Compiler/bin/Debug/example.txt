@@ -1,0 +1,21 @@
+program example;
+/*used for illustrating 
+compiling process */
+var
+a,b,c:integer;
+x:char;
+begin
+a=2;
+read(b);
+read(c);
+x='stu';
+if a>0 and (x<>'a') then b=a+b*c;
+else
+for b=1 to 100 do c=c+b;
+while c>do
+begin
+b=b*c;
+c=c-1;
+end
+do a=a+10 while a<b;
+end.

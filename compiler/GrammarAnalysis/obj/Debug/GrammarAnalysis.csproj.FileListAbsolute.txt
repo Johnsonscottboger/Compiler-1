@@ -1,0 +1,10 @@
+D:\Compiler\Compiler\GrammarAnalysis\bin\Debug\GrammarAnalysis.dll
+D:\Compiler\Compiler\GrammarAnalysis\bin\Debug\GrammarAnalysis.pdb
+D:\Compiler\Compiler\GrammarAnalysis\obj\Debug\ResolveAssemblyReference.cache
+D:\Compiler\Compiler\GrammarAnalysis\obj\Debug\GrammarAnalysis.dll
+D:\Compiler\Compiler\GrammarAnalysis\obj\Debug\GrammarAnalysis.pdb
+C:\Documents and Settings\Administrator\桌面\Compiler\Compiler\GrammarAnalysis\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\Compiler\Compiler\GrammarAnalysis\obj\Debug\GrammarAnalysis.dll
+C:\Documents and Settings\Administrator\桌面\Compiler\Compiler\GrammarAnalysis\obj\Debug\GrammarAnalysis.pdb
+C:\Documents and Settings\Administrator\桌面\Compiler\Compiler\GrammarAnalysis\bin\Debug\GrammarAnalysis.dll
+C:\Documents and Settings\Administrator\桌面\Compiler\Compiler\GrammarAnalysis\bin\Debug\GrammarAnalysis.pdb
