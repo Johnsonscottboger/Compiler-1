@@ -5,41 +5,24 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{840C4349-9115-4A10-8369-F55B0D14F833}</ProjectGuid>
+    <ProjectGuid>{8FD386C6-B90B-4982-B613-43D85ADB09CC}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Compiler</RootNamespace>
-    <AssemblyName>Compiler</AssemblyName>
+    <RootNamespace>compiler</RootNamespace>
+    <AssemblyName>compiler</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
-    <IsWebBootstrapper>true</IsWebBootstrapper>
-    <PublishUrl>http://localhost/Compiler/</PublishUrl>
-    <Install>true</Install>
-    <InstallFrom>Web</InstallFrom>
-    <UpdateEnabled>true</UpdateEnabled>
-    <UpdateMode>Foreground</UpdateMode>
-    <UpdateInterval>7</UpdateInterval>
-    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
-    <UpdatePeriodically>false</UpdatePeriodically>
-    <UpdateRequired>false</UpdateRequired>
-    <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>0</ApplicationRevision>
-    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <UseApplicationTrust>false</UseApplicationTrust>
-    <CreateDesktopShortcut>true</CreateDesktopShortcut>
-    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformTarget>x86</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
-    <Optimize>true</Optimize>
+    <Optimize>false</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <GenerateSerializationAssemblies>On</GenerateSerializationAssemblies>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -50,110 +33,119 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup>
-    <SignManifests>true</SignManifests>
-  </PropertyGroup>
-  <PropertyGroup>
-    <ManifestCertificateThumbprint>492D6B6C85FF3970C19B53BE687F97D607B07D09</ManifestCertificateThumbprint>
-  </PropertyGroup>
-  <PropertyGroup>
-    <ManifestKeyFile>Compiler_TemporaryKey.pfx</ManifestKeyFile>
-  </PropertyGroup>
-  <PropertyGroup>
-    <SignAssembly>true</SignAssembly>
-  </PropertyGroup>
-  <PropertyGroup>
-    <AssemblyOriginatorKeyFile>Compiler_TemporaryKey.pfx</AssemblyOriginatorKeyFile>
-  </PropertyGroup>
-  <PropertyGroup>
-    <TargetZone>LocalIntranet</TargetZone>
-  </PropertyGroup>
-  <PropertyGroup>
-    <GenerateManifests>true</GenerateManifests>
-  </PropertyGroup>
-  <PropertyGroup>
-    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
-    <DebugSymbols>true</DebugSymbols>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <Optimize>true</Optimize>
-    <DebugType>full</DebugType>
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <CodeAnalysisLogFile>bin\Debug\Compiler.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
-    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
-    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
-    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
-    <ErrorReport>prompt</ErrorReport>
-    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
-    <CodeAnalysisRuleSetDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
-    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
-    <CodeAnalysisRuleDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <Optimize>true</Optimize>
-    <DebugType>pdbonly</DebugType>
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <CodeAnalysisLogFile>bin\Release\Compiler.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
-    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
-    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
-    <ErrorReport>prompt</ErrorReport>
-    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
-    <CodeAnalysisRuleSetDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
-    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
-    <CodeAnalysisRuleDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
-  </PropertyGroup>
   <ItemGroup>
-    <Reference Include="GrammarAnalysis">
-      <HintPath>..\GrammarAnalysis\bin\Debug\GrammarAnalysis.dll</HintPath>
-    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Complier.cs">
+    <Compile Include="About.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Complier.Designer.cs">
-      <DependentUpon>Complier.cs</DependentUpon>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
     </Compile>
-    <Compile Include="DFAD.cs" />
+    <Compile Include="Class.cs" />
+    <Compile Include="Compiler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compiler.Designer.cs">
+      <DependentUpon>Compiler.cs</DependentUpon>
+    </Compile>
     <Compile Include="DFAmin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DFAmin.Designer.cs">
+    <Compile Include="DFAmin.designer.cs">
       <DependentUpon>DFAmin.cs</DependentUpon>
     </Compile>
-    <Compile Include="DfaMinClass.cs" />
-    <Compile Include="Group.cs" />
-    <Compile Include="NFAM.cs" />
-    <Compile Include="NFANtoNFAD.cs" />
-    <Compile Include="OpaFile.cs" />
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RegToNfa.cs">
+    <Compile Include="InterCodeGenratn.cs" />
+    <Compile Include="LexcicalAnalsis.cs" />
+    <Compile Include="LL%281%29.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RegToNfa.Designer.cs">
-      <DependentUpon>RegToNfa.cs</DependentUpon>
+    <Compile Include="LL%281%29.Designer.cs">
+      <DependentUpon>LL%281%29.cs</DependentUpon>
     </Compile>
-    <Compile Include="Reg_nfa.cs">
-      <SubType>Code</SubType>
+    <Compile Include="LR.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="WordAnalysis.cs" />
-    <EmbeddedResource Include="Complier.resx">
-      <DependentUpon>Complier.cs</DependentUpon>
+    <Compile Include="LR.Designer.cs">
+      <DependentUpon>LR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LR0.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LR0.designer.cs">
+      <DependentUpon>LR0.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Middle_Code.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Middle_Code.designer.cs">
+      <DependentUpon>Middle_Code.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NFA_DFA_MFA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NFA_DFA_MFA.Designer.cs">
+      <DependentUpon>NFA_DFA_MFA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OperatorFirst.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OperatorFirst.Designer.cs">
+      <DependentUpon>OperatorFirst.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parser.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="NDMFA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NDMFA.designer.cs">
+      <DependentUpon>NDMFA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Scanner.cs" />
+    <Compile Include="Symbol.cs" />
+    <Compile Include="token_table.cs" />
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compiler.resx">
+      <DependentUpon>Compiler.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DFAmin.resx">
       <DependentUpon>DFAmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LL%281%29.resx">
+      <DependentUpon>LL%281%29.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LR.resx">
+      <DependentUpon>LR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LR0.resx">
+      <DependentUpon>LR0.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Middle_Code.resx">
+      <DependentUpon>Middle_Code.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NFA_DFA_MFA.resx">
+      <DependentUpon>NFA_DFA_MFA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OperatorFirst.resx">
+      <DependentUpon>OperatorFirst.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -164,11 +156,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="RegToNfa.resx">
-      <DependentUpon>RegToNfa.cs</DependentUpon>
+    <EmbeddedResource Include="NDMFA.resx">
+      <DependentUpon>NDMFA.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="Compiler_TemporaryKey.pfx" />
-    <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -178,51 +168,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
-      <Visible>False</Visible>
-      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 和 x64%29</ProductName>
-      <Install>true</Install>
-    </BootstrapperPackage>
-    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
-      <Visible>False</Visible>
-      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
-      <Install>false</Install>
-    </BootstrapperPackage>
-    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
-      <Visible>False</Visible>
-      <ProductName>.NET Framework 3.5 SP1</ProductName>
-      <Install>false</Install>
-    </BootstrapperPackage>
-    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
-      <Visible>False</Visible>
-      <ProductName>Windows Installer 3.1</ProductName>
-      <Install>true</Install>
-    </BootstrapperPackage>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="文件名.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <FileAssociation Include=".DFA">
-      <Visible>False</Visible>
-      <Description>DFA文件</Description>
-      <Progid>3</Progid>
-      <DefaultIcon>文件名.ico</DefaultIcon>
-    </FileAssociation>
-    <FileAssociation Include=".NFAN">
-      <Visible>False</Visible>
-      <Description>NFAN文件</Description>
-      <Progid>2</Progid>
-      <DefaultIcon>文件名.ico</DefaultIcon>
-    </FileAssociation>
-    <FileAssociation Include=".RS">
-      <Visible>False</Visible>
-      <Description>正规式文件</Description>
-      <Progid>1</Progid>
-      <DefaultIcon>文件名.ico</DefaultIcon>
-    </FileAssociation>
+    <None Include="编码表.xls" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

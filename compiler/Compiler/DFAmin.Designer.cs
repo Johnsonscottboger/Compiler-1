@@ -1,4 +1,4 @@
-﻿namespace Compiler
+﻿namespace compiler
 {
     partial class DFAmin
     {
@@ -29,25 +29,25 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.lvDFAD = new System.Windows.Forms.ListView();
-            this.btnDFADtoDFAM = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.lvDFAN = new System.Windows.Forms.ListView();
+            this.lblEnds = new System.Windows.Forms.Label();
+            this.lblStarts = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.btnReadDFAD = new System.Windows.Forms.Button();
+            this.lvDFAD = new System.Windows.Forms.ListView();
             this.From = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Varch = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.To = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.btnDFADtoDFAM = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.lblEndNode = new System.Windows.Forms.Label();
+            this.lblStartNode = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lvDFAN = new System.Windows.Forms.ListView();
             this.mFrom = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.mVarch = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.mTo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.lblStarts = new System.Windows.Forms.Label();
-            this.lblEnds = new System.Windows.Forms.Label();
-            this.lblStartNode = new System.Windows.Forms.Label();
-            this.lblEndNode = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -65,7 +65,51 @@
             this.groupBox1.Size = new System.Drawing.Size(358, 430);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "DFA最小化";
+            this.groupBox1.Text = "DFA";
+            // 
+            // lblEnds
+            // 
+            this.lblEnds.AutoSize = true;
+            this.lblEnds.Location = new System.Drawing.Point(78, 405);
+            this.lblEnds.Name = "lblEnds";
+            this.lblEnds.Size = new System.Drawing.Size(0, 12);
+            this.lblEnds.TabIndex = 5;
+            // 
+            // lblStarts
+            // 
+            this.lblStarts.AutoSize = true;
+            this.lblStarts.Location = new System.Drawing.Point(78, 374);
+            this.lblStarts.Name = "lblStarts";
+            this.lblStarts.Size = new System.Drawing.Size(0, 12);
+            this.lblStarts.TabIndex = 4;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(7, 405);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(65, 12);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "结束状态：";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(7, 374);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(65, 12);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "开始状态：";
+            // 
+            // btnReadDFAD
+            // 
+            this.btnReadDFAD.Location = new System.Drawing.Point(233, 396);
+            this.btnReadDFAD.Name = "btnReadDFAD";
+            this.btnReadDFAD.Size = new System.Drawing.Size(119, 23);
+            this.btnReadDFAD.TabIndex = 1;
+            this.btnReadDFAD.Text = "读取DFA文件";
+            this.btnReadDFAD.UseVisualStyleBackColor = true;
+            this.btnReadDFAD.Click += new System.EventHandler(this.btnReadDFAD_Click);
             // 
             // lvDFAD
             // 
@@ -82,13 +126,25 @@
             this.lvDFAD.UseCompatibleStateImageBehavior = false;
             this.lvDFAD.View = System.Windows.Forms.View.Details;
             // 
+            // From
+            // 
+            this.From.Text = "From";
+            // 
+            // Varch
+            // 
+            this.Varch.Text = "Vrach";
+            // 
+            // To
+            // 
+            this.To.Text = "To";
+            // 
             // btnDFADtoDFAM
             // 
             this.btnDFADtoDFAM.Location = new System.Drawing.Point(264, 396);
             this.btnDFADtoDFAM.Name = "btnDFADtoDFAM";
             this.btnDFADtoDFAM.Size = new System.Drawing.Size(87, 23);
             this.btnDFADtoDFAM.TabIndex = 1;
-            this.btnDFADtoDFAM.Text = "DFAD->DFAM";
+            this.btnDFADtoDFAM.Text = "DFA->MFA";
             this.btnDFADtoDFAM.UseVisualStyleBackColor = true;
             this.btnDFADtoDFAM.Click += new System.EventHandler(this.btnDFADtoDFAM_Click);
             // 
@@ -105,7 +161,41 @@
             this.groupBox2.Size = new System.Drawing.Size(361, 430);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "DNAM";
+            this.groupBox2.Text = "MFA";
+            // 
+            // lblEndNode
+            // 
+            this.lblEndNode.AutoSize = true;
+            this.lblEndNode.Location = new System.Drawing.Point(78, 406);
+            this.lblEndNode.Name = "lblEndNode";
+            this.lblEndNode.Size = new System.Drawing.Size(0, 12);
+            this.lblEndNode.TabIndex = 5;
+            // 
+            // lblStartNode
+            // 
+            this.lblStartNode.AutoSize = true;
+            this.lblStartNode.Location = new System.Drawing.Point(78, 374);
+            this.lblStartNode.Name = "lblStartNode";
+            this.lblStartNode.Size = new System.Drawing.Size(0, 12);
+            this.lblStartNode.TabIndex = 4;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(9, 405);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(65, 12);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "结束状态：";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(7, 374);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(65, 12);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "开始状态：";
             // 
             // lvDFAN
             // 
@@ -122,28 +212,6 @@
             this.lvDFAN.UseCompatibleStateImageBehavior = false;
             this.lvDFAN.View = System.Windows.Forms.View.Details;
             // 
-            // btnReadDFAD
-            // 
-            this.btnReadDFAD.Location = new System.Drawing.Point(233, 396);
-            this.btnReadDFAD.Name = "btnReadDFAD";
-            this.btnReadDFAD.Size = new System.Drawing.Size(119, 23);
-            this.btnReadDFAD.TabIndex = 1;
-            this.btnReadDFAD.Text = "读取DFAD文件";
-            this.btnReadDFAD.UseVisualStyleBackColor = true;
-            this.btnReadDFAD.Click += new System.EventHandler(this.btnReadDFAD_Click);
-            // 
-            // From
-            // 
-            this.From.Text = "From";
-            // 
-            // Varch
-            // 
-            this.Varch.Text = "Vrach";
-            // 
-            // To
-            // 
-            this.To.Text = "To";
-            // 
             // mFrom
             // 
             this.mFrom.Text = "From";
@@ -156,74 +224,6 @@
             // 
             this.mTo.Text = "To";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(7, 374);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 12);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "开始状态：";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(7, 405);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 12);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "结束状态：";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(7, 374);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(65, 12);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "开始状态：";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(9, 405);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(65, 12);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "结束状态：";
-            // 
-            // lblStarts
-            // 
-            this.lblStarts.AutoSize = true;
-            this.lblStarts.Location = new System.Drawing.Point(78, 374);
-            this.lblStarts.Name = "lblStarts";
-            this.lblStarts.Size = new System.Drawing.Size(0, 12);
-            this.lblStarts.TabIndex = 4;
-            // 
-            // lblEnds
-            // 
-            this.lblEnds.AutoSize = true;
-            this.lblEnds.Location = new System.Drawing.Point(78, 405);
-            this.lblEnds.Name = "lblEnds";
-            this.lblEnds.Size = new System.Drawing.Size(0, 12);
-            this.lblEnds.TabIndex = 5;
-            // 
-            // lblStartNode
-            // 
-            this.lblStartNode.AutoSize = true;
-            this.lblStartNode.Location = new System.Drawing.Point(78, 374);
-            this.lblStartNode.Name = "lblStartNode";
-            this.lblStartNode.Size = new System.Drawing.Size(0, 12);
-            this.lblStartNode.TabIndex = 4;
-            // 
-            // lblEndNode
-            // 
-            this.lblEndNode.AutoSize = true;
-            this.lblEndNode.Location = new System.Drawing.Point(78, 406);
-            this.lblEndNode.Name = "lblEndNode";
-            this.lblEndNode.Size = new System.Drawing.Size(0, 12);
-            this.lblEndNode.TabIndex = 5;
-            // 
             // DFAmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -234,6 +234,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "DFAmin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DFA最小化";
             this.Load += new System.EventHandler(this.DFAmin_Load);
             this.groupBox1.ResumeLayout(false);

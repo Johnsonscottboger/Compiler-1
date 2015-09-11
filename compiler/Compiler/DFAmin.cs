@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace Compiler
+namespace compiler
 {
     public partial class DFAmin : Form
     {
@@ -41,10 +41,7 @@ namespace Compiler
                     filename = ofd.FileName;
                     ReadDFAD(filename);
                 }
-                else
-                {
-
-                }
+                
             }
         }
         private void ReadDFAD(string filename)
@@ -67,6 +64,7 @@ namespace Compiler
 
         private void btnDFADtoDFAM_Click(object sender, EventArgs e)
         {
+            lvDFAN.Items.Clear();
             List<DFAD.DFA> list = new List<DFAD.DFA>();
             DFAD.DFA dfa = new DFAD.DFA();
             for (int i = 0; i < lvDFAD.Items.Count; i++)
